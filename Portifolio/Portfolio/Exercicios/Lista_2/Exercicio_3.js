@@ -1,0 +1,11 @@
+let idades = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+
+let soma = idades.reduce(function(acumulo,atual){
+    return acumulo+atual
+})
+let media = soma / 20
+
+let acimadamedia = idades.filter(function(maior){
+    return maior > media
+})
+document.writeln(acimadamedia)
