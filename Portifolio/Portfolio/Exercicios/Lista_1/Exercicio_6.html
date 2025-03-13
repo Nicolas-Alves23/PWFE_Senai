@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let nota_1 = Number(prompt("Me passe a nota 1"))
+
+        let nota_2 = Number(prompt("Me passe a nota 2"))
+
+        let media = (nota_1 + nota_2) / 2 
+        // fiz desta maneira para testar a minha logica if e else
+        if ((nota_1 + nota_2) / 2 >= 5 && (nota_1 + nota_2) % 2 === 0 || (nota_1 + nota_2) / 2 >= 5) {
+            document.write("A nota está na média e é par <br>");
+            if ((nota_1 + nota_2) % 2 != 0) {
+                document.write("A nota está na média porém não é par<br>")
+            }
+        } else if ((nota_1 + nota_2) / 2 < 5) {
+            document.write("Não está na média");
+        } 
+        document.write ("A média é está: ",media)
+    </script>
+</body>
+
+</html>
