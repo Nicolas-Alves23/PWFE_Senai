@@ -1,0 +1,20 @@
+.conteiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #141414;
+    padding: 5px;
+    color: aqua;
+}
+ul{
+    list-style: none;
+    margin-right: 20px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+}
+li{
+    margin-left: 30px;
+    color: aqua;
+    
+}
