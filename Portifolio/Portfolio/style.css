@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
@@ -6,7 +9,7 @@
 
 
 header{
-    background-color: #0c041c;
+    background-color: #0a021a;
     height: 100vh;
     border-radius: 0px 0px 000px 10px;
     display: flex;
@@ -14,6 +17,22 @@ header{
     overflow-x: hidden;
 
 }
+
+.conteiner_text_plus_img{
+    display: flex;
+}
+
+.Bem_vindo {
+    color: antiquewhite;
+    margin-top: 250px;
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 80px;
+
+}
+
 .circlewhite{
     position: absolute;
     background-color: #fff;
@@ -28,8 +47,15 @@ header{
 
 }
 .img_notebook{
-    margin-left: 100px;
+    margin-left: 350px;
+    margin-top: 150px;
+}
+.apresentation{
+    color: #fff;
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
 }
 main{
-    margin-top: 2000px;
 }
