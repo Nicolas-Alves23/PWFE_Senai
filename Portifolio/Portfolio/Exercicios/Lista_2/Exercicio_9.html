@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let vetorA = [];
+        let vetorB = [];
+        let vetorC = [];
+
+        for (let i = 0; i < 5; i++) {
+            let num = Number(prompt("Digite um número para o vetor A:"));
+            vetorA.push(num);
+        }
+
+        for (let i = 0; i < 5; i++) {
+            let num = Number(prompt("Digite um número para o vetor B:"));
+            vetorB.push(num);
+        }
+
+        for (let i = 0; i < 5; i++) {
+            vetorC.push(vetorA[i]);
+            vetorC.push(vetorB[i]);
+        }
+
+        document.writeln("Vetor C (valores alternados de A e B): " + vetorC.join(", "));
+
+    </script>
+</body>
+
+</html>

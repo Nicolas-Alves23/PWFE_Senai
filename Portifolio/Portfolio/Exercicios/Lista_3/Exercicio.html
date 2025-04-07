@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" id="numA" placeholder="Valor A">
+    <input type="number" id="numB" placeholder="Valor B">
+    <select id="operacao">
+        <option value="soma">SOMA</option>
+        <option value="subtracao">SUBTRAÇÃO</option>
+        <option value="multi">MULTIPLICAÇÃO</option>
+        <option value="divisao">DIVISÃO</option>
+    </select>
+
+    <button onclick="calcular()">Calcular</button>
+
+    <script>
+        function calcular(){
+
+            let a = parseFloat(document.getElementById("numA").value)
+            let b = parseFloat(document.getElementById("numB").value)
+            let operacao = document.getElementById("operacao").value
+            
+            switch (operacao) {
+                
+                case "soma":
+                    let soma = (a, b) => a + b;
+                    alert("Resultado da soma: " + soma(a, b))
+                    break
+                case "subtracao":
+                    let subtracao = (a, b) => a - b;
+                    alert("Resultado da subtração: " + subtracao(a, b))
+                        break
+                case "multi":
+                    let multiplicacao = (a, b) => a * b;
+                    alert("Resultado da multiplicação: " + multiplicacao(a, b))
+                    break
+            case "divisao":
+                    let divisao = (a, b) => a / b
+                    alert("Resultado da divisão: " + divisao(a, b))
+                    break
+                }
+            }
+                </script>
+</body>
+
+</html>

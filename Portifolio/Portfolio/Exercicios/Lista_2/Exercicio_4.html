@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let num_pares = []
+        let num_impares = []
+        for (i = 0; i <= 9; i++) {
+            let num = Number(prompt("Passe um número positivo para vermos se ele é par ou impar"))
+            if (num % 2 === 0) {
+                num_pares += 1
+            }
+            else {
+                num_impares += 1
+            }
+        }
+        if (num_pares >= 1) {
+            document.writeln("Essa é a quantidade de números pares = " + num_pares)
+        }
+        else {
+            document.writeln("Todos os números são ímpares")
+        }
+    </script>
+</body>
+
+</html>

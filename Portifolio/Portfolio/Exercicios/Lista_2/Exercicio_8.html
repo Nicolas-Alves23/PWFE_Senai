@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let vetorA = []
+
+        let vetorB = []
+
+        for (let i = 1; i <= 6; i++) {
+            let num = Number(prompt("Me passe um número inteiro "))
+            vetorA.push(num)
+
+            if (i % 2 === 0) {
+                vetorB.push(num)
+            }
+
+        }
+
+        document.writeln(`Vetor A tem esses valores : ${vetorA} <br>Vetor B tem esses valores: ${vetorB}`)
+    </script>
+</body>
+
+</html>

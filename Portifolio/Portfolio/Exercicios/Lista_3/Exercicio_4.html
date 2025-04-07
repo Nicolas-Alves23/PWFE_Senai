@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="idd" placeholder="Digite a sua idade">
+    <button onclick="pode_tirar()">CNH</button>
+    <script>
+        function pode_tirar(){
+            let idade = parseInt(document.getElementById("idd").value)
+
+            if (idade >= 18){
+                document.writeln("Você pode tirar CNH")
+            }
+            else{
+                document.writeln("Você não pode tirar CNH")
+            }
+        }
+
+
+    </script>
+</body>
+</html>

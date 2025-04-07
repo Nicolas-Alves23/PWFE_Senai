@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function inverter_string(palavra_usuario) {
+
+            let transformando_array = palavra_usuario.split("")
+
+            let invertendo_array = transformando_array.reverse()
+
+            let juntando = invertendo_array.join(" ")
+
+            return juntando
+        }
+        let palavra_usuario = prompt("Me passe uma palavra para o programa inverter")
+        alert(inverter_string(palavra_usuario))
+    </script>
+</body>
+
+</html>
