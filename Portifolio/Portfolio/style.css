@@ -20,19 +20,33 @@ header{
   
 }
 .logo_tipo{
-  height: 60px;
-  width: 60px;
-  border-radius: 100%;
-  border: solid 1px #7D5DCC;
+  height: 80px;
+  width: 80px;
+}
+.img_and_name{
+  position: relative;
+  left: -11.6%;
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+    color: antiquewhite;
+
 }
 
 ul{
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  margin-left: 500px;
 }
-ul li{
-  
+ul a li{
+  margin-left: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
   color: antiquewhite;
 }
 
@@ -125,7 +139,7 @@ ul li{
   position: relative;
   width: 1100px;
   margin-left: 70px;
-  margin-top: 40px;
+ 
   z-index: 10;
 }
 
@@ -231,12 +245,26 @@ ul li{
 
 .line_under_text_picture{
   display: flex;
+  justify-content: space-around;
 }
 
+.informantion{
+  display: flex;
+  align-items: center;
+}
 .numbers{
-  color: antiquewhite;
+  color: #6134d3;
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
   font-style: normal;
-  font-size: 30px;
+  font-size: 70px;
+  margin-right: 10px;
+}
+.line_under_text_picture p{
+  color: antiquewhite;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+  white-space: pre-line;
 }
