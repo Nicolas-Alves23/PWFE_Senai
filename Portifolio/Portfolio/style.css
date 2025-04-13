@@ -52,7 +52,7 @@ ul a li{
 
 .picture_and_text{
   background-color: rgba(15,7,22,255);
-  height: 100vh;
+  height: 92vh;
 }
 
 .top_text_and_picture{
@@ -267,4 +267,39 @@ ul a li{
   font-style: normal;
   font-size: 20px;
   white-space: pre-line;
+}
+/* ---------------------------------------------------- */
+
+.my_skills{
+  height: 100vh;
+  background-color: #000;
+}
+.line_imgs_top img{
+  width: 150px;
+
+}
+
+.line_imgs_top{
+  display: flex;
+  justify-content: center;
+}
+
+.line_imgs_under{
+  display: flex;
+  justify-content: center;
+}
+
+.line_imgs_under img{
+  width: 150px;
+
+}
+
+.back_img{
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10%;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
