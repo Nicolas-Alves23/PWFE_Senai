@@ -20,7 +20,7 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 3% 0px;
+  padding: 0px 15% 0px 3%;
 }
 .logo_tipo{
   height: 80px;
@@ -318,12 +318,16 @@ ul a li{
 
 /* ----------------------------- */
 
+.flex_box{
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .activites{
   background-color: rgba(15,7,22,255);
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center
 }
 .cards {
   display: flex;
@@ -332,18 +336,18 @@ ul a li{
 }
 
 .cards .red {
-  background-color: #007e9e;
+  background-color: #4c24b1 ;
 }
 
 .cards .blue {
-  background-color: #0062ff;
+  background-color:#4816c9;
 }
 
 .cards .green {
-  background-color: #18cd5e;
+  background-color:#4800ff ;
 }
 
-.cards .card {
+.cards  .card {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -357,7 +361,7 @@ ul a li{
   transition: 400ms;
 }
 
-.cards .card p.tip {
+.cards  .card p.tip {
   font-size: 1em;
   font-weight: 700;
 }
@@ -373,4 +377,18 @@ ul a li{
 .cards:hover > .card:not(:hover) {
   filter: blur(10px);
   transform: scale(0.9, 0.9);
+}
+.purple_button_2{
+  border-radius: 50px;
+  border: solid 2px #7D5DCC;
+  width: 150px;
+  height: 40px;
+  font-size: 20px;
+  color: #7D5DCC;
+}
+
+.purple_button_2:hover{
+  background-color: #7D5DCC;
+  color:antiquewhite ;
+  transition: 2s;
 }
