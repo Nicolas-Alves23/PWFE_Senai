@@ -1,190 +1,182 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
-    margin: 0;
-    padding: 0;
-   
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-html, body {
-    overflow-x: hidden; 
-  }
-header{
-    background-color: #0a021a;
-    height: 100vh;
-    border-radius: 0px 0px 000px 10px;
-    display: flex;
-    justify-content: center;
- 
-    
-    z-index: -2;
-
+html{
+  overflow-x: hidden;
 }
 
-.conteiner_text_plus_img{
-    display: flex;
+.picture_and_text{
+  background-color: rgba(15,7,22,255);
+  height: 90vh;
 }
 
-.Bem_vindo {
-    color: antiquewhite;
-    margin-top: 250px;
-    font-family: "Inter Tight", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 80px;
-
-}
-
-.circlewhite{
-    position: absolute;
-    background-color: #000;
-    height: 50%;
-    width: 150%;
-    margin-top: 90vh;
-    border-radius: 60%;
-    overflow-x: hidden;
-    z-index: 1;
-}
-.notebook{
-    height: 50vh;
-
-}
-.img_notebook{
-    margin-left: 350px;
-    margin-top: 150px;
-}
-.apresentation{
-    color: #fff;
-    font-family: "Inter Tight", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 200;
-    font-style: normal;
-}
-main{
-    position: absolute;
-    z-index: 99;
-    margin-top: 80px;
-    background-color: #000;
-}
-
-.sobre_mim{
-    width: 100vw;
-    margin-bottom: 500px;
-
+.top_text_and_picture{
+  display: flex;
 }
 
 
-
-.conteiner_baixo{
-    display: flex;
-    justify-content: center;
-    width: 100%;
+.picture img{
+  transform: rotate(2deg);
+  width: 500px;
+  border-radius: 30px;
 }
 
-.conteiner_baixo img{
-    width: 500px;
-    height: 600px;
+.text_left h2{
+  color: antiquewhite;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
 }
 
-/* From Uiverse.io by aadium */ 
+:root {
+  --gradient: linear-gradient(
+    to right,
+    rgb(125, 93, 204),
+    rgb(230, 221, 238) 80%
+  )
+}
+
+.linear_gradient_in_text{
+  background-image: var(--gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 80px;
+}
+
+.text_left p{
+  color: antiquewhite;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
+  margin-right: 300px;
+}
+
+.text_left{
+  width: 1100px;
+  margin-left: 70px;
+  margin-top: 40px;
+}
+
+.fast_links{
+  display: flex;
+}
+
+.purple_button{
+  border-radius: 50px;
+  border: solid 2px #7D5DCC;
+  width: 150px;
+  height: 40px;
+  font-size: 20px;
+  color: #7D5DCC;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.purple_button:hover{
+  background-color: #7D5DCC;
+  color:antiquewhite ;
+  transition: 2s;
+}
+
+/* From Uiverse.io by elisapi */ 
 .card {
-    width: 400px;
-    height: 500px;
-    background: #15001f;
-    border: 1px solid #c042ff;
-    font-size: 14px;
-    font-family: monospace;
-    overflow: auto;
+  width: fit-content;
+  height: fit-content;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  gap: 20px;
+}
+
+/* for all social containers*/
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  background-color: rgb(65, 29, 131);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: 0.3s;
+  border-radius: 30px;
+}
+/* instagram*/
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: 0.3s;
+  transform: scale(1.2);
+}
+/* twitter*/
+.containerTwo:hover {
+  background-color: #000;
+  transition-duration: 0.3s;
+  transform: scale(1.2);
+}
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: 0.3s;
+  transform: scale(1.2);
+}
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #128c7e;
+  transition-duration: 0.3s;
+  transform: scale(1.2);
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: 0.3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
   }
-  
-  .titlebar {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 21px;
-    font-weight: 450;
-    background-color: #2e0043;
-    width: 100%;
-    text-align: right;
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
-  
-  .card button {
-    width: 40px;
-    height: 35px;
-    margin-left: -5px;
-    border: 0;
-    outline: 0;
-    background: transparent;
-    transition: 0.2s;
-  }
-  
-  button svg path, 
-  button svg rect, 
-  button svg polygon {
-    fill: #ffffff;
-  }
-  
-  button svg {
-    width: 10px;
-    height: 10px;
-  }
-  
-  .close:hover {
-    background-color: #e81123;
-  }
-  
-  .maximize:hover {
-    background-color: #c042ff2e;
-  }
-  
-  .minimize:hover {
-    background-color: #c042ff2e;
-  }
-  
-  #pre {
-    overflow: auto;
-    width: 100%;
-    padding: 10px;
-    height: auto;
-    color: #bafff8;
-  }
-  
-  .curlies {
-    color: #ff0000;
-  }
-  
-  .sc {
-    color: #e600ff;
-  }
-  
-  .rounds {
-    color: #ffffff;
-  }
-  
-  .operator {
-    color: #ffff00;
-  }
-  
-  .s1 {
-    color: #22ff00;
-  }
-  
-  .s2 {
-    color: #4281ff;
-  }
-  
-  .s3 {
-    color: #ff4284;
-  }
-  
-  .s4 {
-    color: #ffae00;
-  }
-  
-  .s5 {
-    color: #ffffff;
-  }
-  
-  .s6 {
-    color: #ffff00;
-  }
+}
+
+
+.line_under_text_picture{
+  display: flex;
+}
+
+.numbers{
+  color: antiquewhite;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 30px;
+}
