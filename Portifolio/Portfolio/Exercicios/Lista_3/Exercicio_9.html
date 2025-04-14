@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="Cadastrar">
+        <input type="text" id="nome" placeholder="Coloque seu nome">
+        <input type="text" id="endereco" placeholder="Coloque seu endereço">
+        <h4>Sexo</h4>
+        <input type="radio" name = "sexo" value="Masculino"> Masculino
+        <input type="radio" name = "sexo" value="Feminino">Feminino
+        <input type="tel" id="telefone" placeholder="Coloque seu telefone">
+        <input type="tel" id="celular" placeholder="Coloque seu celular">
+        <input type="email" id="email" placeholder="Coloque seu email">
+        <button onclick="validarform(event)"> Enviar </button>
+    </form>
+    <script>
+        function validarform(event){
+            event.preventDefault()
+
+            const nome = document.getElementById("nome").value.trim()
+            const endereco = document.getElementById("endereco").value.trim()
+            const sexoselect = document.querySelector('input[name="sexo"]:checked')
+            const telefone = document.getElementById("telefone").value.trim()
+            const celular = document.getElementById("celular").value.trim()
+            const email = document.getElementById("email").value.trim()
+            
+            if(!nome){
+                alert("Por favor, preencha o nome.")
+                return
+            }
+            
+            if(!endereco){
+                alert("Por favor, preencha o endereço.")
+                return
+            }
+            
+            if(!sexoselect){
+                alert("Por favor, preencha o sexo.")
+                return
+            }
+            
+            if(!telefone){
+                alert("Por favor, preencha o telefone.")
+                return
+            }
+            
+            if(!celular){
+                alert("Por favor, preencha o celular.")
+                return
+            }
+            
+            if(!email){
+                alert("Por favor, preencha o email.")
+                return
+            }
+            
+            alert("Enviado com sucesso")
+            
+        }
+    </script>
+</body>
+</html>
