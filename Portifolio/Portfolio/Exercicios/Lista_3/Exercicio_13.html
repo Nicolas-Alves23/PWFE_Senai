@@ -7,14 +7,16 @@
 </head>
 <body>
     <input type="number" id="valor_financiado" placeholder="Valor total">
+    <input type="number" id="porcento_juros" placeholder="Juros (ex: 5% = 0.05)">
     <input type="number" id="num_parcelas" placeholder="Número de parcelas">
     <button onclick="financiamento()">Calcular</button>
     <script>
         function financiamento(){
             const vf = parseFloat(document.getElementById("valor_financiado").value) 
+            const pj = parseFloat(document.getElementById("porcento_juros").value) 
             const np = parseInt(document.getElementById("num_parcelas").value) 
 
-            const conta = vf * ( 0.05 * Math.pow(1+0.05,np)) / (Math.pow(1+0.05,np) -1)
+            const conta = vf * ( pj * Math.pow(1+pj,np)) / (Math.pow(1+pj,np) -1)
 
             alert(`O resultado é R$${conta.toFixed(2)}`)
         }
