@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="num" placeholder="Me passe um valor">
+    <button onclick="contagem()">Calcular Cédulas</button>
+    <div id="resultado"></div>
+    
+    <script>
+      function contagem() {
+        let num = parseInt(document.getElementById("num").value)
+        let resultado = ""
+    
+        let num200 = Math.floor(num / 200)
+        num %= 200
+    
+        let num100 = Math.floor(num / 100)
+        num %= 100
+    
+        let num50 = Math.floor(num / 50)
+        num %= 50
+    
+        let num20 = Math.floor(num / 20)
+        num %= 20
+    
+        let num10 = Math.floor(num / 10)
+        num %= 10
+    
+        let num5 = Math.floor(num / 5)
+        num %= 5
+    
+        let num1 = Math.floor(num / 1)
+        num %= 1
+    
+        resultado += `<p>Cédulas de 200: ${num200}</p>`
+        resultado += `<p>Cédulas de 100: ${num100}</p>`
+        resultado += `<p>Cédulas de 50: ${num50}</p>`
+        resultado += `<p>Cédulas de 20: ${num20}</p>`
+        resultado += `<p>Cédulas de 10: ${num10}</p>`
+        resultado += `<p>Cédulas de 5: ${num5}</p>`
+        resultado += `<p>Cédulas de 1: ${num1}</p>`
+    
+        document.getElementById("resultado").innerHTML = resultado
+      }
+    </script>
+    
+</body>
+</html>
