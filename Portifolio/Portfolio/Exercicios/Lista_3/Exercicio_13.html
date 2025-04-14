@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="valor_financiado" placeholder="Valor total">
+    <input type="number" id="num_parcelas" placeholder="Número de parcelas">
+    <button onclick="financiamento()">Calcular</button>
+    <script>
+        function financiamento(){
+            const vf = parseFloat(document.getElementById("valor_financiado").value) 
+            const np = parseInt(document.getElementById("num_parcelas").value) 
+
+            const conta = vf * ( 0.05 * Math.pow(1+0.05,np)) / (Math.pow(1+0.05,np) -1)
+
+            alert(`O resultado é R$${conta.toFixed(2)}`)
+        }
+    </script>
+</body>
+</html>
