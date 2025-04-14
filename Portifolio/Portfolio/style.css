@@ -11,6 +11,10 @@ html{
   overflow-x: hidden;
 }
 
+a{
+  text-decoration: none;
+}
+
 header{
   background-color: rgba(15,7,22,255);
   width: 100%;
@@ -391,4 +395,10 @@ ul a li{
   background-color: #7D5DCC;
   color:antiquewhite ;
   transition: 2s;
+}
+
+.lists{
+  background-color: rgba(15,7,22,255);
+  height: 100vh;
+  padding: 40px 42% 0px;
 }
