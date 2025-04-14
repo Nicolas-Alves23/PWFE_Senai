@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<input type="number" id="num" placeholder="Passe o salário">
+<button onclick="mostrarIR()">Calcular IR</button>
+<p id="resultado"></p>
+
+<script>
+    const calcularIR = (salario) => {
+        if (salario <= 2112.00) {
+            return 0;
+        } else if (salario <= 2826.65) {
+            return salario * 0.075 - 158.40;
+        } else if (salario <= 3751.05) {
+            return salario * 0.15 - 370.40;
+        } else if (salario <= 4664.68) {
+            return salario * 0.225 - 651.73;
+        } else {
+            return salario * 0.275 - 884.96;
+        }
+    };
+
+    const mostrarIR = () => {
+        const salario = parseFloat(document.getElementById("num").value);
+        const imposto = calcularIR(salario);
+        const resultado = document.getElementById("resultado");
+
+        resultado.textContent = `Imposto de Renda: R$ ${imposto.toFixed(2)}`;
+    };
+</script>
+
+</body>
+
+</html>

@@ -6,8 +6,14 @@
     <title>Document</title>
 </head>
 <body>
+    <input type="number" id="num" placeholder="Raiz quadrada">
+    <button onclick="Raiz()">Botão</button>
     <script>
-        let num = Number(prompt(""))
+        function Raiz() {
+            let num = parseInt(document.getElementById("num").value)
+            let resultado = Math.sqrt(num)
+            document.writeln(`Essa é a raiz quadrada ${resultado}`)
+        }
     </script>
 </body>
 </html>
